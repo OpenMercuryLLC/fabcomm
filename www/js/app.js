@@ -10,8 +10,6 @@ angular.module('starter', ['ionic'
                            , 'starter.filters'                                                 
                            , 'starter.directives'                           
                            , 'starter.controllers'
-                           , 'ngAnimate'
-                           , 'ngTouch'
                            ])
 
 .run(function($ionicPlatform) {
@@ -99,6 +97,17 @@ angular.module('starter', ['ionic'
         }
       }
     })
+    .state('tab.chat-detail', {
+      url: '/chats/:chatId',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/chat-detail.html',
+          controller: 'ChatDetailCtrl'
+        }
+      }
+    })
+
+    
   
     
   .state('tab.coupons', {
@@ -117,7 +126,7 @@ angular.module('starter', ['ionic'
     views: {
       'tab-catalog': {
         templateUrl: 'templates/tab-catalog.html',
-        controller: 'SlideCtrl'
+        controller: 'CatalogCtrl'
       }
     }
   });
