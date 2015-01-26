@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/scottben/fabcomapp/gulpfile.js",
+        "/home/scottben/fabcomapp/www/js/app.js"
+    ]
+}

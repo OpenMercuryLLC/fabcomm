@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <link rel="alternate stylesheet" type="text/css" href="resource://gre-resources/plaintext.css"
+      title="Wrap Long Lines">
+  </head>
+  <body>
+    <pre>&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta content="text/html; charset=windows-1252" http-equiv="content-type"&gt;
+    &lt;link rel="alternate stylesheet" type="text/css" href="resource://gre-resources/plaintext.css"
+      title="Wrap Long Lines"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;pre&gt;angular.module('starter.controllers', [])
+
+.controller('HomeCtrl', function($scope) {})
+
+.controller('CatalogCtrl', function($scope, Friends) {
+  $scope.friends = Friends.all();
+})
+
+.controller('LocalBusCtrl', function($scope, Friends) {
+  $scope.friends = Friends.all();
+})<br>
+.controller('CouponsCtrl', function($scope) {
+  $scope.settings = {
+    enableFriends: true
+  }
+
+});&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;/pre&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<ion-view view-title="Catalog">
+  <ion-content class="padding">
+    <div ng-controller="SlideCtrl" class="list card">
+        <div class="container slider">
+            <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage"
+                 ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+                 ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+
+            <a class="arrow prev" href="#" ng-click="nextSlide()"></a>
+            <a class="arrow next" href="#" ng-click="prevSlide()"></a>
+            <nav class="nav">
+                <div class="wrapper">
+                    <ul class="dots">
+                        <li class="dot" ng-repeat="slide in slides">
+                            <a href="#" ng-class="{'active':isCurrentSlideIndex($index)}"
+                               ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--<div class="list card">
+      <div class="item item-divider">Health</div>
+      <div class="item item-body">
+        <div>
+          You ate an apple today!
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Upcoming</div>
+      <div class="item item-body">
+        <div>
+          You have <b>29</b> meetings on your calendar tomorrow.
+        </div>
+      </div>
+    </div>-->
+  </ion-content>
+</ion-view>

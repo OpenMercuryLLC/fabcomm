@@ -1,0 +1,26 @@
+/* Empty. Add your own CSS if you like */
+img.test {
+    width: 30%;
+    height: auto;
+}
+
+#blocks
+{
+    align-self: center;
+}
+.col
+{
+    align-self: center;
+    align-content: center; 
+    width: inherit;
+}
+#block-img
+{
+    size: auto;
+    width: 90%;
+}
+#categoryblock
+{
+    background:  #A0F7AA;
+    background-color: #A0F7AA;
+}
