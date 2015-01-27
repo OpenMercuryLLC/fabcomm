@@ -44,6 +44,7 @@ angular.module('starter', ['ionic'
     .state('coupondining', {
     url: '/coupondining',
     templateUrl: 'templates/coupondining.html',
+    controller: 'AppCtrl'
     })
     
     .state('couponapparel', {

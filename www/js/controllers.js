@@ -1,5 +1,11 @@
 angular.module('starter.controllers', [])
 
+    .controller('AppCtrl', ['$scope', function($scope) {
+        $scope.$back = function() { 
+            window.history.back();
+            };
+        }])
+
     .controller('HomeCtrl', function ($scope) {})
 
     .controller('CatalogCtrl', function ($scope) {})
@@ -186,3 +192,4 @@ angular.module('starter.controllers', [])
   };
 
 })
+
