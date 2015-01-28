@@ -86,43 +86,43 @@ angular.module('starter', ['ionic'
       }
     })
   
-  .state('coupondining', {
+  .state('tab.coupondining', {
     url: '/coupondining',
       views: {
-    'coupondining':{
+    'tab-coupons':{
     templateUrl: 'templates/coupondining.html',
         }
       }
     })
     
-    .state('couponapparel', {
+    .state('tab.couponapparel', {
     url: '/couponapparel',
       views: {
-    'couponapparel':{
+    'tab-coupons':{
     templateUrl: 'templates/couponapparel.html',
       }}
     })
     
-    .state('couponbeauty', {
+    .state('tab.couponbeauty', {
     url: '/couponbeauty',
       views: {
-    'couponbeauty':{
+    'tab-coupons':{
     templateUrl: 'templates/couponbeauty.html',
     }}
     })
     
-    .state('couponleisure', {
+    .state('tab.couponleisure', {
     url: '/couponleisure',
       views: {
-    'couponleisure':{
+    'tab-coupons':{
     templateUrl: 'templates/couponleisure.html',
     }}
     })
     
-    .state('couponservices', {
+    .state('tab.couponservices', {
     url: '/couponservices',
       views: {
-    'couponaservices':{
+    'tab-coupons':{
     templateUrl: 'templates/couponservices.html',
     }}
     })
