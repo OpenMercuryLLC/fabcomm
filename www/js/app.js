@@ -7,7 +7,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic'
                            , 'starter.services'                        
-                           , 'starter.filters'                                                 
+                           , 'starter.filters'                                    
                            , 'starter.directives'                           
                            , 'starter.controllers'
                            ])
@@ -41,32 +41,7 @@ angular.module('starter', ['ionic'
             templateUrl: "templates/tabs.html"
                 })
     
-    .state('coupondining', {
-    url: '/coupondining',
-    templateUrl: 'templates/coupondining.html',
-    controller: 'AppCtrl'
-    })
     
-    .state('couponapparel', {
-    url: '/couponapparel',
-    templateUrl: 'templates/couponapparel.html',
-    })
-    
-    .state('couponbeauty', {
-    url: '/couponbeauty',
-    templateUrl: 'templates/couponbeauty.html',
-    })
-    
-    .state('couponleisure', {
-    url: '/couponleisure',
-    templateUrl: 'templates/couponleisure.html',
-    })
-    
-    .state('couponservices', {
-    url: '/couponservices',
-    templateUrl: 'templates/couponservices.html',
-    })
-
   // Each tab has its own nav history stack:
 
   .state('tab.home', {
@@ -98,16 +73,6 @@ angular.module('starter', ['ionic'
         }
       }
     })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
-      }
-    })
-
     
   
     
@@ -121,6 +86,47 @@ angular.module('starter', ['ionic'
       }
     })
   
+  .state('coupondining', {
+    url: '/coupondining',
+      views: {
+    'coupondining':{
+    templateUrl: 'templates/coupondining.html',
+        }
+      }
+    })
+    
+    .state('couponapparel', {
+    url: '/couponapparel',
+      views: {
+    'couponapparel':{
+    templateUrl: 'templates/couponapparel.html',
+      }}
+    })
+    
+    .state('couponbeauty', {
+    url: '/couponbeauty',
+      views: {
+    'couponbeauty':{
+    templateUrl: 'templates/couponbeauty.html',
+    }}
+    })
+    
+    .state('couponleisure', {
+    url: '/couponleisure',
+      views: {
+    'couponleisure':{
+    templateUrl: 'templates/couponleisure.html',
+    }}
+    })
+    
+    .state('couponservices', {
+    url: '/couponservices',
+      views: {
+    'couponaservices':{
+    templateUrl: 'templates/couponservices.html',
+    }}
+    })
+
 
   .state('tab.catalog', {
     url: '/catalog',
