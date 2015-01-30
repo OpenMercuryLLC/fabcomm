@@ -75,8 +75,69 @@ angular.module('starter', ['ionic'
       }
     })
     
+  .state('tab.localbus_dining', {
+    url: '/localbus_dining',
+      views: {
+    'tab-localbus':{
+    templateUrl: 'templates/localbus/dining.html',
+        }
+      }
+    })
   
+  .state('tab.localbus_beauty', {
+    url: '/localbus_beauty',
+      views: {
+    'tab-localbus':{
+    templateUrl: 'templates/localbus/beauty.html',
+        }
+      }
+    })
+  
+  .state('tab.localbus_entertain', {
+    url: '/localbus_entertain',
+      views: {
+    'tab-localbus':{
+    templateUrl: 'templates/localbus/entertain.html',
+        }
+      }
+    })
+  
+  .state('tab.localbus_health', {
+    url: '/localbus_health',
+      views: {
+    'tab-localbus':{
+    templateUrl: 'templates/localbus/health.html',
+        }
+      }
+    })
+  
+  .state('tab.localbus_profsvcs', {
+    url: '/localbus_profsvcs',
+      views: {
+    'tab-localbus':{
+    templateUrl: 'templates/localbus/profsvcs.html',
+        }
+      }
+    })
+  
+  .state('tab.localbus_repair', {
+    url: '/localbus_repair',
+      views: {
+    'tab-localbus':{
+    templateUrl: 'templates/localbus/repair.html',
+        }
+      }
+    })
     
+  .state('tab.localbus_shopping', {
+    url: '/localbus_shopping',
+      views: {
+    'tab-localbus':{
+    templateUrl: 'templates/localbus/shopping.html',
+        }
+      }
+    })
+  
   .state('tab.coupons', {
       url: '/coupons',
       views: {
@@ -91,7 +152,7 @@ angular.module('starter', ['ionic'
     url: '/coupondining',
       views: {
     'tab-coupons':{
-    templateUrl: 'templates/coupondining.html',
+    templateUrl: 'templates/coupons/dining.html',
         }
       }
     })
@@ -100,7 +161,7 @@ angular.module('starter', ['ionic'
     url: '/couponapparel',
       views: {
     'tab-coupons':{
-    templateUrl: 'templates/couponapparel.html',
+    templateUrl: 'templates/coupons/apparel.html',
       }}
     })
     
@@ -108,7 +169,7 @@ angular.module('starter', ['ionic'
     url: '/couponbeauty',
       views: {
     'tab-coupons':{
-    templateUrl: 'templates/couponbeauty.html',
+    templateUrl: 'templates/coupons/beauty.html',
     }}
     })
     
@@ -116,7 +177,7 @@ angular.module('starter', ['ionic'
     url: '/couponleisure',
       views: {
     'tab-coupons':{
-    templateUrl: 'templates/couponleisure.html',
+    templateUrl: 'templates/coupons/leisure.html',
     }}
     })
     
@@ -124,7 +185,7 @@ angular.module('starter', ['ionic'
     url: '/couponservices',
       views: {
     'tab-coupons':{
-    templateUrl: 'templates/couponservices.html',
+    templateUrl: 'templates/coupons/services.html',
     }}
     })
 
