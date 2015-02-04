@@ -84,6 +84,33 @@ angular.module('starter', ['ionic'
       }
     })
   
+  .state('tab.dining_under_10', {
+    url: '/dining_under_10',
+      views: {
+    'tab-localbus':{
+    templateUrl: 'templates/localbus/Dining/dining_under_10.html',
+        }
+      }
+    })
+  
+  .state('tab.dining_10_to_20', {
+    url: '/dining_10_to_20',
+      views: {
+    'tab-localbus':{
+    templateUrl: 'templates/localbus/Dining/dining_10_to_20.html',
+        }
+      }
+    })
+  
+  .state('tab.dining_over_20', {
+    url: '/dining_over_20',
+      views: {
+    'tab-localbus':{
+    templateUrl: 'templates/localbus/Dining/dining_over_20.html',
+        }
+      }
+    })
+  
   .state('tab.localbus_beauty', {
     url: '/localbus_beauty',
       views: {
